@@ -1,7 +1,8 @@
+import os
 from google import genai
 import telebot
 
-TELEGRAM_TOKEN = "9155937834:AAFxyswgqj2_WYAiJxx2CeAGkzTUBfe7ZBs"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 GEMINI_API_KEY = "AQ.Ab8RN6LbLXWwGcF66BCmawP7RJLYKoIrz8ciG0gQ_m9W1tYg"
 
 ai_client = genai.Client(api_key=GEMINI_API_KEY)
